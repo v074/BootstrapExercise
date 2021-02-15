@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Bootstrap Exercise</title>
+</head>
+
+<body>
+    <!-- B9-B10: Animated Progress Bar here -->
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+      </div>
+
+    <!-- B7-B8: Navbar goes here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--1: Creating div with the conainer class -->
+    <div class="container">
+        <!-- 2: Applying the Display-1 class to the h1 element -->
+        <h1 class="display-1">Hello, world!</h1>
+        <!-- 3-5: Creating the h2, setting the text to muted and backgorund to danger -->
+        <h2 class="text-muted bg-danger">Muted Danger</h2>
+        <!-- 6-7: Creating a p element and disabling text wrap. -->
+        <p class="text-nowrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum nobis maiores eveniet
+            eius aliquid ullam facere minima voluptates atque modi quasi temporibus ipsa, inventore tempora! Accusantium
+            quasi deserunt aliquam?</p>
+
+            <!-- 8-11: Creating three buttons, setting one to Dark and Small, a second to Secondary and Large, and a third one to Link -->
+        <button class="btn btn-dark btn-sm">Dark</button>
+        <button class="btn btn-secondary btn-lg">Secondary</button>
+        <button class="btn btn-link">Link</button>
+
+        <!-- 12-14: Creating an ordered list, removing the ordering -->
+        <ol class="list-unstyled">
+            <li>Moe</li>
+            <li>Curly</li>
+            <li>Larry</li>
+        </ol>
+
+        <!-- 15-22: Creating and populating a table, setting the core bootstrap table style, setting the table so it is striped and darkens when hovered over -->
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Front-End</th>
+                    <th>Backend</th>
+                    <th>Web Dev Tools</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <!-- 24: Giving the Node.js cell the "Warning" background -->
+                    <td class="bg-warning">Node.js</td>
+                    <td>Express</td>
+                    <td>MongoDB</td>
+                </tr>
+                <!-- 23: giving the last row the "Primary" background -->
+                <tr class="bg-primary">
+                    <td>VS Code</td>
+                    <td>Terminal</td>
+                    <td>Git</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- B1-B3: Creating a "row" div, with two divs inside it, and adding grid classes to have the other divs take up equal space. -->
+        <div class="row">
+            <div class="bg-primary col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, animi atque veritatis quibusdam eos asperiores? Ipsum iusto quasi architecto nesciunt unde! Nam magni qui nemo ducimus omnis a tempora incidunt?</div>
+            <div class="bg-warning col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores fugit ipsa? Ipsum hic fugiat est. Corporis dolor similique placeat, aliquam amet velit minus, vitae enim vel at eum eius.</div>
+        </div>
+
+        <!-- B4-B6: Creating another grid structure with three columns, setting the first to take up twice as much space as either of the other two. -->
+        <div class="row">
+            <!-- Worth noting that technically speaking, you only need the col-6 to make everything else fall into place with unmarked "col" elements in this scenario due to the sum-to-12, and col dividing things up over the interim space.  It probably would not, however, hurt to set the others into col-3s for good practice -->
+            <div class="bg-info col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sunt cum sint eaque explicabo possimus eius totam aut ipsa quos, eveniet nobis suscipit officia, beatae corporis, culpa dolores ullam. Iste.</div>
+            <div class="bg-danger col-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sunt cum sint eaque explicabo possimus eius totam aut ipsa quos, eveniet nobis suscipit officia, beatae corporis, culpa dolores ullam. Iste.</div>
+            <div class="bg-success col-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sunt cum sint eaque explicabo possimus eius totam aut ipsa quos, eveniet nobis suscipit officia, beatae corporis, culpa dolores ullam. Iste.</div>
+
+        </div>
+        <!-- B11-B12:Adding a badge with the notification of having six unread messages -->
+        <!-- Note: Badge necessitates a background in order to be visible -->
+        <div class="badge bg-dark">6 Unread Messages</div>
+        
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
